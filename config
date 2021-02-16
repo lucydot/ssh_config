@@ -1,0 +1,36 @@
+Host archer
+    IdentityFile ~/.ssh/rsa_laptop_Oct20
+    Hostname login.archer2.ac.uk
+    User lucy
+
+Host rdf
+    IdentityFile ~/.ssh/rsa_laptop_Oct20
+    Hostname dtn01.rdf.ac.uk
+    User lucy
+
+Host young
+    IdentityFile ~/.ssh/rsa_laptop_Oct20
+    Hostname young.rc.ucl.ac.uk
+    User mmm0117
+
+Host github.com
+    IdentityFile ~/.ssh/rsa_laptop_Oct20
+    Hostname ssh.github.com
+    Port 443
+    
+Host *
+    ServerAliveInterval 60
+    AddKeysToAgent yes
+    UseKeychain yes
+    ForwardAgent yes
+    IdentityFile ~/.ssh/rsa_laptop_Oct20
+
+Host garrett.unn.ac.uk
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+
+Host oswald
+    User osw_mynf8
+    HostName oswald.campus.unn.ac.uk
+    ProxyCommand ssh -W %h:%p -p 4219 prx_mynf8@garrett.unn.ac.uk 2>/dev/null
+
