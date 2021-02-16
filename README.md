@@ -1,2 +1,2 @@
 # ssh_config
-ssh config file
+is what it says on the tin
