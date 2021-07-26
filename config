@@ -33,4 +33,22 @@ Host oswald
     User osw_mynf8
     HostName oswald.campus.unn.ac.uk
     ProxyCommand ssh -W %h:%p -p 4219 prx_mynf8@garrett.unn.ac.uk 2>/dev/null
+    
+    
+
+Host rutherford
+    User mynf8
+    Hostname rutherford.campus.unn.ac.uk
+    ProxyCommand ssh -W %h:%p -p 4219 prx_mynf8@garrett.unn.ac.uk 2>/dev/null
+    KeepAlive yes
+    ServerAliveInterval 20
+    ServerAliveCountMax 6
+
+Host dade
+    User mynf8
+    HostName 192.168.85.170
+    ProxyCommand ssh -W %h:%p -p 4219 prx_mynf8@garrett.unn.ac.uk 2>/dev/null
+    KeepAlive yes
+    ServerAliveInterval 20
+    ServerAliveCountMax 6
 
