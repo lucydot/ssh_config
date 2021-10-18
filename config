@@ -52,3 +52,6 @@ Host dade
     ServerAliveInterval 20
     ServerAliveCountMax 6
 
+Host angelina
+    User mynf8
+    HostName 172.16.37.198
